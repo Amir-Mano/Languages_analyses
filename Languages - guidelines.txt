@@ -1,0 +1,10 @@
+languages:
+1. take column U and V and merge them (maybe by using sets) (maybe better swithing 1 and 2)
+
+2. create a dictionary matching a specific value for every language (Hebrew = 1, English = 2, etc.)
+2.1. it is possible to merge as a set all the isolated words to get all the languages names.
+2.1.1. maybe even search for only words ending with '-it' sound.
+
+3. encode the languages of each subject
+
+4. sum the unique languages each subject know
