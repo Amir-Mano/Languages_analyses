@@ -1,0 +1,132 @@
+Number of subjects that know 5 or more languages: 18
+0226
+0345
+BB00018
+BB00197
+BB00203
+0836
+0855
+BB00313
+BB00440
+0919
+BB00520
+BB00532
+BB00588
+BB00597
+1023
+BB00599
+0934
+BB00619
+
+
+Number of subjects that know 4 languages: 74
+0011
+B014
+0076
+0082
+0100
+0118
+0124
+B006
+0235
+0245
+0393
+0408
+0398
+0400
+0412
+0455
+0493
+0398*
+0559
+0598
+0628
+0642
+0629
+0646
+0656
+0688
+0695
+0696
+0717
+0723
+BB00031
+0735
+0750
+0766
+BB00065
+BB00061
+BB00082
+BB00080
+BB00092
+BB00104
+BB00115
+0789
+BB00177
+BB00199
+YN150821
+DH080922
+BB00227
+BB00220
+0843
+BB00262
+BB00264
+BB00274
+BB00300
+BB00307
+BB00321
+BB00311
+0881
+BB00326
+0882
+BB00358
+BB00336
+0887
+0900
+BB00446
+BB00454
+0933
+BB00462
+0967
+BB00591
+0990
+0717R
+BB00621
+BB00638
+BBJ_L_15
+
+
+Total number of subjects: 1522
+
+
+Number of subjects that answered in each language: 
+Hebrew: 1484
+English: 1440
+Spanish: 177
+Russian: 204
+French: 71
+Arabic: 69
+Italian: 22
+German: 35
+Portuguese: 16
+Romanian: 10
+Ukrainian: 11
+Yiddish: 9
+Polish: 3
+Chinese: 8
+Greece: 3
+Parsian: 6
+Hungarian: 2
+Catalan: 1
+Japanese: 6
+Slovak: 1
+Swedish: 2
+Dutch: 4
+Czech: 1
+Latin: 1
+Georgian: 2
+Bulgarian: 2
+Croatian: 1
+Amharic: 2
+Moldovan: 1
+Total: 3594

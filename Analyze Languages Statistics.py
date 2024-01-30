@@ -64,6 +64,10 @@ for set_answer,ind in zip(set_data.values(),range(len(set_data))):
 languages_count['Total'] = languages_count.sum(axis=1)
 five_and_above = np.where(languages_count['Total'] >= 5)
 four = np.where(languages_count['Total'] == 4)
+three = np.where(languages_count['Total'] == 3)
+two = np.where(languages_count['Total'] == 2)
+one = np.where(languages_count['Total'] == 1)
+zero = np.where(languages_count['Total'] == 0)
 
 # count the number of subjects that answered in each language
 summary = languages_count.sum(axis=0)
@@ -77,3 +81,31 @@ all_words = set(all_words)
 for word in all_words:
     if word.find('ית')==len(word)-2 & word.find('ית')>0:
         all_languages.append(word)
+
+# save a .txt file with the numbers of subjects that know many languages
+with open('languages_count.txt','w') as f:
+    f.write('Number of subjects that know 5 or more languages: ' + str(len(five_and_above[0])) + '\n')
+    for subjects in data['Number'].iloc[five_and_above[0]]:
+        f.write(str(subjects) + '\n')
+    f.write('\n\nNumber of subjects that know 4 languages: ' + str(len(four[0])) + '\n')
+    for subjects in data['Number'].iloc[four[0]]:
+        f.write(str(subjects) + '\n')
+    f.write('\n\nTotal number of subjects: ' + str(len(data['Number'])) + '\n')
+    f.write('\n\nNumber of subjects that answered in each language: ' + '\n')
+    for language in summary.index:
+        f.write(language + ': ' + str(summary[language]) + '\n')
+
+# save a .txt file with the number of subjects that know each language 0 to 3
+with open('languages_count_0-3.txt','w') as f:
+    f.write('Number of subjects that know 0 languages: ' + str(len(zero[0])) + '\n')
+    for subjects in data['Number'].iloc[zero[0]]:
+        f.write(str(subjects) + '\n')
+    f.write('\n\nNumber of subjects that know 1 language: ' + str(len(one[0])) + '\n')
+    for subjects in data['Number'].iloc[one[0]]:
+        f.write(str(subjects) + '\n')
+    f.write('\n\nNumber of subjects that know 2 languages: ' + str(len(two[0])) + '\n')
+    for subjects in data['Number'].iloc[two[0]]:
+        f.write(str(subjects) + '\n')
+    f.write('\n\nNumber of subjects that know 3 languages: ' + str(len(three[0])) + '\n')
+    for subjects in data['Number'].iloc[three[0]]:
+        f.write(str(subjects) + '\n')
