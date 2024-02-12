@@ -5,7 +5,7 @@ B001
 0181
 
 
-Number of subjects that know 1 language: 56
+Number of subjects that know 1 language: 55
 B005
 B025
 0007
@@ -61,10 +61,9 @@ BB00302
 BB00332
 BB00622
 BBJ_C_3
-BB00780
 
 
-Number of subjects that know 2 languages: 1052
+Number of subjects that know 2 languages: 966
 B007
 B015
 B026

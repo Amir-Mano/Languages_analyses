@@ -1,4 +1,4 @@
-Number of subjects that know 5 or more languages: 19
+Number of subjects that know 5 or more languages: 18
 0226
 0345
 BB00018
@@ -17,10 +17,9 @@ BB00597
 BB00599
 0934
 BB00619
-BB00740
 
 
-Number of subjects that know 4 languages: 82
+Number of subjects that know 4 languages: 74
 0011
 B014
 0076
@@ -95,42 +94,34 @@ BB00591
 BB00621
 BB00638
 BBJ_L_15
-BB00735
-BB00747
-1140
-BJJ_P_3
-BB00765
-1158
-BB00769
-BJJ_L_30
 
 
-Total number of subjects: 1648
+Total number of subjects: 1522
 
 
 Number of subjects that answered in each language: 
-Hebrew: 1606
-English: 1565
-Spanish: 189
-Russian: 224
-French: 76
-Arabic: 75
-Italian: 23
-German: 37
-Portuguese: 17
-Romanian: 13
+Hebrew: 1484
+English: 1440
+Spanish: 177
+Russian: 204
+French: 71
+Arabic: 69
+Italian: 22
+German: 35
+Portuguese: 16
+Romanian: 10
 Ukrainian: 11
 Yiddish: 9
-Polish: 4
+Polish: 3
 Chinese: 8
 Greece: 3
-Parsian: 7
-Hungarian: 3
+Parsian: 6
+Hungarian: 2
 Catalan: 1
 Japanese: 6
 Slovak: 1
 Swedish: 2
-Dutch: 5
+Dutch: 4
 Czech: 1
 Latin: 1
 Georgian: 2
@@ -138,4 +129,4 @@ Bulgarian: 2
 Croatian: 1
 Amharic: 2
 Moldovan: 1
-Total: 3895
+Total: 3594
