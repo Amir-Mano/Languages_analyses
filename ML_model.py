@@ -7,6 +7,8 @@ import scipy.io as sio
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Lasso
 from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
 
 # load MD data
 lan_5 = sio.loadmat('means.mat')
@@ -33,7 +35,7 @@ X = X[:,np.where(np.isnan(X).sum(axis=0) == 0)[0]]
 
 # Model Creation
 x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.1, random_state=42)
-model = Lasso(alpha=0.1)
+model = SVC()
 _ = model.fit(x_train, y_train)
 
 
@@ -51,13 +53,3 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.heatmap(confusion_matrix(y_test, y_pred.round()), annot=True, cmap='Greens', cbar=False)
 plt.show()
-
-
-
-
-
-
-
-
-
-
