@@ -15,20 +15,20 @@ from sklearn.svm import SVC
 
 # load MD data
 lan_5 = sio.loadmat('vectors/MD_vectors_5_lang.mat')
-lan_5 = lan_5['MEAN_nMD_vectors'][:245,:]
+lan_5 = lan_5['MEAN_nMD_vectors'][:209,:]
 Y = np.ones((lan_5.shape[1],1))*5
 
 lan_4 = sio.loadmat('vectors/MD_vectors_4_lang.mat')
-lan_4 = lan_4['MEAN_nMD_vectors'][:245,:]
+lan_4 = lan_4['MEAN_nMD_vectors'][:209,:]
 Y = np.vstack((Y, np.ones((lan_4.shape[1],1))*4))
 
 # load MD data
 lan_2 = sio.loadmat('vectors/MD_vectors_2_lang_temp.mat')
-lan_2 = lan_2['MEAN_nMD_vectors'][:245,:]
+lan_2 = lan_2['MEAN_nMD_vectors'][:209,:]
 Y = np.vstack((Y, np.ones((lan_2.shape[1],1))*2))
 
 lan_1 = sio.loadmat('vectors/MD_vectors_1_lang.mat')
-lan_1 = lan_1['MEAN_nMD_vectors'][:245,:]
+lan_1 = lan_1['MEAN_nMD_vectors'][:209,:]
 Y = np.vstack((Y, np.ones((lan_1.shape[1],1))*1))
 
 # Train/Test Split
@@ -99,3 +99,6 @@ plt.xlabel('Predicted')
 plt.ylabel('True')
 plt.title('Confusion Matrix')
 plt.show()
+
+'''from scipy.signal import find_peaks
+    ...: peaks, _ = find_peaks( np.squeeze(ROIs_pca.components_[1].T), prominence=0.4)'''
